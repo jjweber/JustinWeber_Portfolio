@@ -1,0 +1,174 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  color: #FFF;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+.navigation {
+  list-style: none;
+  background: #252525;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+ul.navigation {
+  margin-left: -.5rem;
+}
+
+.site-wrap {
+  min-width: 100%;
+  height: 100vh;
+  background-color: #000;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.site-wrap {
+  /* ...previous styles here... */
+  padding: 4em 10em;
+  background-size: 200%;
+}
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 2;
+}
+
+label[for="nav-trigger"] {
+  /* ... previous styles here... */
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-size: contain;
+  border: 1px solid #FFF;
+  border-radius: .5rem;
+  padding: 1.25rem;
+  margin: .5rem;
+}
+
+.nav-trigger:checked + label {
+  left: 225px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 195px;
+}
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+ul {
+  padding-top: 2rem;
+}
+
+li.nav-item {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.splashpage-container {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.home h3 {
+  position: absolute;
+  left: 44%;
+  top: 50%;
+}
+
+.home h4 {
+  position: absolute;
+  left: 38%;
+  top: 54%;
+}
+
+.fly-in-text1 {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text2 {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text1 li,
+.fly-in-text2 li {
+  display: inline-block;
+  margin-right: 30px;
+  font-family: Open Sans, Arial;
+  font-weight: 300;
+  font-size: 3em;
+  color: #FFF;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+
+.fly-in-text1 li:last-child,
+.fly-in-text2 li:last-child {
+  margin-right: 0;
+}
+
+.fly-in-text1 li:nth-child(6),
+.fly-in-text2 li:nth-child(6) {
+  margin-right: 0;
+}
+
+.fly-in-text1 hidden li:nth-child(1) 
+
+.footer-container {
+  height: 7vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: transparent;
+  color: #FFF;
+  padding: 0 2rem;
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.social-links {
+  font-size: 25px;
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.copyright {
+  text-align: right;
+  padding: 1.2rem 0;
+}

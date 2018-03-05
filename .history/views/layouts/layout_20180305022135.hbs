@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    {{> header}}
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    <div class="site-wrap">
+      {{{body}}}
+    </div>
+    {{> footer}}
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/popper.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+          setTimeout(function() {
+              $('.fly-in-text1').removeClass('.hidden');
+          }, 500);
+      })();
+    </script>
+  </body>
+</html>
