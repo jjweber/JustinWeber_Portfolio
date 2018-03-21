@@ -1,3 +1,6 @@
+/*****************/
+/* Shared Styles */
+/*****************/
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -10,26 +13,13 @@ a {
   text-decoration: none;
 }
 
-.navigation {
-  list-style: none;
-  background: #252525;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
-ul.navigation {
-  margin-left: -.5rem;
+a:hover {
+  text-decoration: none;
 }
 
 .site-wrap {
   min-width: 100%;
-  height: 100vh;
+  min-height: 100%;
   background-color: #000;
   text-align: center;
   position: relative;
@@ -41,8 +31,62 @@ ul.navigation {
 
 .site-wrap {
   /* ...previous styles here... */
-  padding: 4em 10em;
+  padding: 2rem;
   background-size: 200%;
+}
+
+.page-title {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 799px) {
+  .site-wrap {
+    position: inherit;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .site-wrap {
+    padding: 4em 10em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .site-wrap {
+    padding: 4em 10em;
+  }
+}
+
+/*********************/
+/* Navigation Styles */
+/*********************/
+
+/* Small Screen Nav */
+.navigation {
+  list-style: none;
+  background: #252525;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+ul.navigation {
+  margin-left: -.5rem;
+  list-style: none;
+}
+
+/* Md-Lg Screen Nav */
+.navbar {
+  background: #252525;
+}
+
+.navbar-nav {
+  margin-bottom: 2rem;
 }
 
 .nav-trigger {
@@ -82,6 +126,20 @@ label[for="nav-trigger"] {
   transition: left 0.2s;
 }
 
+.navbar-toggler {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border: 1px solid #FFF;
+  border-radius: .5rem;
+  padding: 1.25rem;
+  font-size: 0.1rem;
+  line-height: 0;
+}
+
+.navbar-toggler-icon {
+  width: 0.5em;
+  height: 0.5em;
+}
+
 ul {
   padding-top: 2rem;
 }
@@ -91,46 +149,49 @@ li.nav-item {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 799px) {
+  label,
+  .navigation {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+/***********************/
+/* Landing Page Styles */
+/***********************/
+
 .splashpage-container {
   text-align: center;
   margin-top: 10rem;
 }
 
-.home h3 {
-  position: absolute;
-  left: 44%;
-  top: 50%;
-}
-
-.home h4 {
-  position: absolute;
-  left: 38%;
-  top: 54%;
-}
-
 .fly-in-text1 {
-  list-style: none;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translateX(-50%) translateY(-50%);
+  margin-top: 160px;
 }
 
+.fly-in-text1,
 .fly-in-text2 {
+  padding: 0;
   list-style: none;
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .fly-in-text1 li,
 .fly-in-text2 li {
   display: inline-block;
-  margin-right: 30px;
   font-family: Open Sans, Arial;
   font-weight: 300;
-  font-size: 3em;
+  font-size: 2em;
+  margin-right: 2px;
   color: #FFF;
   opacity: 1;
   transition: all 2.5s ease;
@@ -142,11 +203,15 @@ li.nav-item {
 }
 
 .fly-in-text1 li:nth-child(6),
-.fly-in-text2 li:nth-child(6) {
+.fly-in-text2 li:nth-child(5) {
   margin-right: 0;
 }
 
 .fly-in-text1.hidden {
+  opacity: 0;
+}
+
+.fly-in-text2.hidden {
   opacity: 0;
 }
 
@@ -157,6 +222,220 @@ li.nav-item {
 .fly-in-text1.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
 .fly-in-text1.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
 
+.fly-in-text2.hidden li:nth-child(1) { transform: translateX(-300px) translateY(300px); }
+.fly-in-text2.hidden li:nth-child(2) { transform: translateX(-120px) translateY(-200px); }
+.fly-in-text2.hidden li:nth-child(3) { transform: translateX(400px) translateY(300px); }
+.fly-in-text2.hidden li:nth-child(4) { transform: translateX(-10px) translateY(150px); }
+.fly-in-text2.hidden li:nth-child(5) { transform: translateX(300px) translateY(-200px); }
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.home h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.home h4 {
+  font-size: 1rem;
+}
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 3.2s;
+  -moz-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+
+@media only screen and (max-width: 799px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+/*********************/
+/* About Page Styles */
+/*********************/
+
+.mySkills {
+  text-align: left;
+}
+
+.mySkills h4 {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 799px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+/********************/
+/* Work Page Styles */
+/********************/
+
+.frontend-container h2,
+.fullstack-container h2,
+.otherWork-container h2 {
+  font-size: 1.5rem;
+  background: #02b7ff;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+
+.card {
+  color: #000;
+  min-width: 100%;
+}
+
+.card-deck .card {
+  margin-bottom: 2rem;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 799px) {
+  .card-deck {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .fly-in-text1 li,
+  .fly-in-text2 li {
+    font-size: 3em;
+    margin-right: 12px;
+  }
+
+  .home h3 {
+    font-size: 1.75rem;
+  }
+  
+  .home h4 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    min-width: calc(100% / 3);
+    max-width: 45.3%;
+  }
+
+  .card-title {
+    padding: 1rem 0;
+    border-bottom: 1px solid #000;
+    background: #252525;
+    color: #fff;
+  }
+  
+  .card-body {
+    border-top: 1px solid #000;
+  }
+
+  #accordion1,
+  #accordion2,
+  #accordion3 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    min-width: calc(100% / 3.5);
+    max-width: 30%;  
+  }
+}
+
+/********************/
+/* Blog Page Styles */
+/********************/
+
+@media only screen and (max-width: 799px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+/***********************/
+/* Contact Page Styles */
+/***********************/
+.myHours {
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  margin-top: 3rem;
+}
+
+.needs-validation h4,
+.contact-info h4 {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.contact-info p:not(:first-of-type) {
+  text-align: left;
+  font-size: 18px;
+}
+
+.contact-info span {
+  font-size: 14px;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 799px) {
+
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+/*****************/
+/* Footer Styles */
+/*****************/
 
 .footer-container {
   height: 7vh;
@@ -181,4 +460,10 @@ li.nav-item {
 .copyright {
   text-align: right;
   padding: 1.2rem 0;
+}
+
+@media only screen and (max-width: 799px) {
+  .footer-container {
+    position: inherit;
+  }
 }

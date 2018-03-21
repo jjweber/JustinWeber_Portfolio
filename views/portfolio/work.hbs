@@ -1,1 +1,136 @@
-<h1>Welcome to the {{page}} page!</h1>
+<h1 class="page-title">My {{page}}</h1>
+
+<div class="frontend-container">
+    <h2>Front-end Projects</h2>
+    <div class="card-deck">
+        {{#each frontendWork}}
+            <div class="card">
+                <h5 class="card-title">{{title}}</h5>
+                <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">{{description}}</p>
+                    <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">{{languages}}</small>
+                </div>
+            </div>
+        {{/each}}            
+    </div>
+
+    <div id="accordion1">
+        {{#each frontendWork}}
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{title}}" aria-expanded="fasle" aria-controls="collapse{{title}}">
+                            <h5 class="card-title">{{title}}</h5>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapse{{title}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">{{description}}</p>
+                        <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">{{languages}}</small>
+                    </div>
+                </div>
+            </div>
+        {{/each}} 
+    </div>
+</div>
+
+<div class="fullstack-container">
+    <h2>Fullstack Projects</h2>
+    <div class="card-deck">
+        {{#each fullstackWork}}
+            <div class="card">
+                <h5 class="card-title">{{title}}</h5>
+                <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">{{description}}</p>
+                    <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">{{languages}}</small>
+                </div>
+            </div>
+        {{/each}}            
+    </div>
+
+    <div id="accordion2">
+        {{#each fullstackWork}}
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{title}}" aria-expanded="true" aria-controls="collapseOne">
+                            <h5 class="card-title">{{title}}</h5>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapse{{title}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">{{description}}</p>
+                        <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">{{languages}}</small>
+                    </div>
+                </div>
+            </div>
+        {{/each}} 
+    </div>  
+</div>
+
+<div class="otherWork-container">
+    <h2>Other Projects</h2>
+    <div class="card-deck">
+        {{#each otherWork}}
+            <div class="card">
+                <h5 class="card-title">{{title}}</h5>
+                <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">{{description}}</p>
+                    <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">{{languages}}</small>
+                </div>
+            </div>
+        {{/each}}            
+    </div>
+
+    <div id="accordion3">
+        {{#each otherWork}}
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{title}}" aria-expanded="true" aria-controls="collapseOne">
+                            <h5 class="card-title">{{title}}</h5>
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapse{{title}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">{{description}}</p>
+                        <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">{{languages}}</small>
+                    </div>
+                </div>
+            </div>
+        {{/each}} 
+    </div>      
+</div>
+
+
+

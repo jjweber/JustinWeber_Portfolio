@@ -10,6 +10,8 @@ var index = require('./routes/index');
 
 var app = express();
 
+app.locals.projectsData = require('./myWork.json');
+
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');

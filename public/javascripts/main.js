@@ -1,8 +1,14 @@
 $(document).ready(function(e) {
-    // your code here
+    // First name animation code here
     setTimeout(function() {
         $('.fly-in-text1').removeClass('hidden');
     }, 500);
+
+    // Last name animation code here
+    setTimeout(function() {
+        $('.fly-in-text2').removeClass('hidden');
+    }, 1000);
+
  });
 
 /*
