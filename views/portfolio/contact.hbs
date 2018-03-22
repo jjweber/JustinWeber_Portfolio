@@ -8,73 +8,69 @@
         <p class="mb-0">I will respond to your message as soon as possible. Thank you and have a great day.</p>
     </div>
 {{/if}}
-
-<form class="needs-validation" method="POST" action="/send" novalidate>
+<div class="form-container">
     <h4>Leave Me A Message</h4>
-    <div class="form-row">
-        <div class="col-md-6 mb-6 form-group">
-            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
-            <div class="valid-feedback">
-            Looks good!
+    <form class="needs-validation" method="POST" action="/send" novalidate>
+        
+        <div class="form-row">
+            <div class="col-md-6 mb-6 form-group">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                <div class="valid-feedback">
+                    Successful input!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter your name here.
+                </div>
+            </div>
+            <div class="col-md-6 mb-6 form-group">
+                <input type="text" class="form-control" name="company" id="company" placeholder="Company">
             </div>
         </div>
-        <div class="col-md-6 mb-6 form-group">
-            <input type="text" class="form-control" name="company" id="company" placeholder="Company" required>
-            <div class="valid-feedback">
-            Looks good!
+        <div class="form-row">
+            <div class="col-md-6 mb-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                <div class="valid-feedback">
+                    Successful input!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter a valid email address..
+                </div>
+            </div>
+            <div class="col-md-6 mb-6 form-group">
+                <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone Number" aria-describedby="inputGroupPrepend" required>
+                <div class="valid-feedback">
+                    Successful input!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter a phone number.
+                </div>
             </div>
         </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-6 mb-6 form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
-            <div class="invalid-feedback">
-                Please provide a valid email.
+        <div class="form-row">
+            <div class="col-md-12 mb-12 form-group">
+            <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
+                <div class="valid-feedback">
+                    Successful input!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter a phone number.
+                </div>
             </div>
         </div>
-        <div class="col-md-6 mb-6 form-group">
-            <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone Number" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-                Please enter a phone number.
-            </div>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-12 mb-12 form-group">
-        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your Message" required></textarea>
-        <div class="valid-feedback">
-            Looks good!
-        </div>
-        </div>
-    </div>
-    <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
+        <button class="btn btn-primary submitBtn" type="submit">Submit form</button>
+    </form>
+</div>
 
-<div class="contact-info">
+<div class="contact-info-container">
     <h4>Other Contact Methods</h4>
-    <p class="myHours">(The best time to contact me is: <span>Monday – Friday / 8:00 - 5:00.</span>)</p>
-    <p><i class="fa fa-phone"></i> <span>(704) 905-6547</span></p>
-    <p><i class="fa fa-envelope"></i> <span>jjweber@student.fullsail.edu</span></p>
-    <p><i class="fa fa-envelope"></i> <span>justinweberdev@gmail.com</span></p>
+    <div class="contact-info">
+        <p class="myHours">(The best time to contact me is:<span>Monday–Friday / 8:00-5:00.</span>)</p>
+        <p><i class="fa fa-phone contactIcons"></i> <span>(704) 905-6547</span></p>
+        <p><i class="fa fa-envelope contactIcons"></i> <span>jjweber@student.fullsail.edu</span></p>
+        <p><i class="fa fa-envelope contactIcons"></i> <span>justinweberdev@gmail.com</span></p>
+    </div>
 </div>
 
 <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        }, false);
-        });
-    }, false);
-    })();
+
 </script>

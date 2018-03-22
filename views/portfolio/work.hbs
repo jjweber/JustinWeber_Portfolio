@@ -1,5 +1,152 @@
 <h1 class="page-title">My {{page}}</h1>
 
+
+
+<div id="mainAccordion">
+
+
+    <div class="containerName">
+        <div class="card-header" id="outerHeadingOne" data-toggle="collapse" data-target="#collapseOuter1" aria-expanded="true" aria-controls="collapseOuter1">
+            <h2>Front-end Projects</h2>
+        </div>
+
+        <div id="collapseOuter1" class="collapse" aria-labelledby="outerHeadingOne" data-parent="#mainAccordion">
+            <div class="card-deck">
+                {{#each frontendWork}}
+                    <div class="card">
+                        <h5 class="card-title">{{name}}</h5>
+                        <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{description}}</p>
+                            <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">{{languages}}</small>
+                        </div>
+                    </div>
+                {{/each}}            
+            </div>
+
+            <div id="innerAccordion1">
+                {{#each frontendWork}}
+                    <div class="card">
+                        <div class="card-header" id="headingOne{{title}}"  data-toggle="collapse" data-target="#collapse{{title}}" aria-expanded="false" aria-controls="collapse{{title}}">
+                            <h5 class="card-title">{{name}}</h5>
+                        </div>
+
+                        <div id="collapse{{title}}" class="collapse" aria-labelledby="headingOne{{title}}" data-parent="#innerAccordion1">
+                            <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">{{description}}</p>
+                                <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{languages}}</small>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}} 
+            </div>
+        </div>
+    </div>
+
+    <div class="containerName">
+        <div class="card-header" id="outerHeadingTwo" data-toggle="collapse" data-target="#collapseOuter2" aria-expanded="true" aria-controls="collapseOuter2">
+            <h2>Fullstack Projects</h2>
+        </div>
+
+        <div id="collapseOuter2" class="collapse" aria-labelledby="outerHeadingTwo" data-parent="#mainAccordion">
+            <div class="card-deck">
+                {{#each fullstackWork}}
+                    <div class="card">
+                        <h5 class="card-title">{{name}}</h5>
+                        <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{description}}</p>
+                            <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">{{languages}}</small>
+                        </div>
+                    </div>
+                {{/each}}            
+            </div>
+
+            <div id="innerAccordion2">
+                {{#each fullstackWork}}
+                    <div class="card">
+                        <div class="card-header" id="headingTwo{{title}}"  data-toggle="collapse" data-target="#collapse{{title}}" aria-expanded="true" aria-controls="collapse{{title}}">
+                            <h5 class="card-title">{{name}}</h5>
+                        </div>
+
+                        <div id="collapse{{title}}" class="collapse" aria-labelledby="headingTwo{{title}}" data-parent="#innerAccordion2">
+                            <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">{{description}}</p>
+                                <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{languages}}</small>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}} 
+            </div>  
+        </div>
+    </div>
+
+    <div class="containerName">
+        <div class="card-header" id="outerHeadingThree" data-toggle="collapse" data-target="#collapseOuter3" aria-expanded="true" aria-controls="collapseOuter3">
+            <h2>Other Projects</h2>
+        </div>
+
+        <div id="collapseOuter3" class="collapse" aria-labelledby="outerHeadingThree" data-parent="#mainAccordion">
+            <div class="card-deck">
+                {{#each otherWork}}
+                    <div class="card">
+                        <h5 class="card-title">{{name}}</h5>
+                        <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">{{description}}</p>
+                            <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">{{languages}}</small>
+                        </div>
+                    </div>
+                {{/each}}            
+            </div>
+
+            <div id="innerAccordion3">
+                {{#each otherWork}}
+                    <div class="card">
+                        <div class="card-header" id="headingThree{{title}}" data-toggle="collapse" data-target="#collapse{{title}}" aria-expanded="true" aria-controls="collapse{{title}}">
+                            <h5 class="card-title">{{name}}</h5>
+                        </div>
+
+                        <div id="collapse{{title}}" class="collapse" aria-labelledby="headingThree{{title}}" data-parent="#innerAccordion3">
+                            <img class="card-img-top" src="{{screenShot}}" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">{{description}}</p>
+                                <a class="card-link" href="{{projectUrl}}">{{projectUrl}}</a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{languages}}</small>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}} 
+            </div>  
+        </div>
+    </div> 
+  
+</div>
+
+
+
+
+<!--
+
 <div class="frontend-container">
     <h2>Front-end Projects</h2>
     <div class="card-deck">
@@ -132,5 +279,5 @@
     </div>      
 </div>
 
-
+-->
 

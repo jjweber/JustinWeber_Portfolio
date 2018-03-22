@@ -3,34 +3,39 @@
         "frontend": [
             { 
                 "screenShot": "/images/accessibleForm.png",
+                "name": "Form for Impaired",
                 "title": "accessible-form",
                 "description": "Form with vaildation and accessibility for the impaired.",
                 "languages": "css, html, gulp, javascript",
                 "projectUrl": "https://jjweber.github.io/accessible-form/"
             },
             {
-                "screenShot": "/images/dailySidekick.png", 
+                "screenShot": "/images/dailySidekick.png",
+                "name": "To-do List App", 
                 "title": "Daily_Sidekick_App", 
                 "description": "Frontend Todo list application that uses localstorage.", 
                 "languages": "css, sass, html, gulp, javascript", 
                 "projectUrl": "https://jjweber.github.io/Daily_Sidekick_App/"
             },
             {
-                "screenShot": "/images/cookingApp.png", 
+                "screenShot": "/images/cookingApp.png",
+                "name": "Cooking Recipe App", 
                 "title": "my-cooking-app", 
                 "description": "Cookbook application for keeping up with your own recipes. Uses localstorage for saving recipes.", 
                 "languages": "css, html, gulp, javascript", 
                 "projectUrl": "https://jjweber.github.io/my-cooking-app/"
             },
             {
-                "screenShot": "/images/responsiveApp.png", 
+                "screenShot": "/images/responsiveApp.png",
+                "name": "Marvel Comic Gallery App", 
                 "title": "responsive-app", 
                 "description": "Frontend application that uses the Marvel Api and localstorage.", 
                 "languages": "css, sass, html, gulp, javascript", 
                 "projectUrl": "https://jjweber.github.io/responsive-app/"
             },
             {
-                "screenShot": "/images/responsiveGallery.png", 
+                "screenShot": "/images/responsiveGallery.png",
+                "name": "Image Gallery App", 
                 "title": "responsive-image-gallery", 
                 "description": "Responsive image gallery application built with javascript.", 
                 "languages": "css, sass, html, gulp, javascript", 
@@ -38,6 +43,7 @@
             },
             {
                 "screenShot": "/images/newsApi.png",
+                "name": "Current News App",
                 "title": "work-project", 
                 "description": "Current news application using News Api. Built with Angular 2 and localstorage", 
                 "languages": "css, html, angular 2", 
@@ -46,14 +52,16 @@
         ],
         "fullstack": [
             {
-                "screenShot": "/images/node-student-management.png", 
+                "screenShot": "/images/node-student-management.png",
+                "name": "Student Management App", 
                 "title": "node-student-management", 
                 "description": "Student Grade management application built with Express and Node.js.", 
                 "languages": "css, handlebars, javascript, mongoDb, express.js, node.js", 
                 "projectUrl": "https://node-student-management.herokuapp.com/"
             },
             {
-                "screenShot": "/images/billManagment.png", 
+                "screenShot": "/images/billManagment.png",
+                "name": "Bill Management App", 
                 "title": "jweber-bms", 
                 "description": "Bill management application built with Angular 2 and the MEAN stack.", 
                 "languages": "html, css, javascript, angular 2, mongoDb, express.js, node.js", 
@@ -61,6 +69,7 @@
             },
             {
                 "screenShot": "/images/shoppingcart.png", 
+                "name": "Ecommerice Shopping App",
                 "title": "shoppingcart-mean", 
                 "description": "eCommerice shopping application with shopping cart and checkout functionality. Full vender login with crud inventory management. Built with Angular 5, Stripe.js, and the MEAN stack.", 
                 "languages": "html, css, javascript, angular 5, mongoDb, express.js, node.js, stripe.js", 
@@ -69,14 +78,16 @@
         ],
         "other": [
             {
-                "screenShot": "/images/pong.png", 
+                "screenShot": "/images/pong.png",
+                "name": "Pong Game", 
                 "title": "Pong", 
                 "description": "My version of the clasic Pong game.", 
                 "languages": "javascript", 
                 "projectUrl": "https://jjweber.github.io/Pong/"
             },
             {
-                "screenShot": "/images/tetris.png", 
+                "screenShot": "/images/tetris.png",
+                "name": "Tetris Game", 
                 "title": "Tetris", 
                 "description": "My version of the clasic Tetris game", 
                 "languages": "javascript", 

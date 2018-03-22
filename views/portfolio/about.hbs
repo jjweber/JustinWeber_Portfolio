@@ -1,66 +1,265 @@
-<h1>{{page}} Me</h1>
+<h1 class="page-title">{{page}} Me</h1>
 
-<p class="story-text">
-    <span>Hello, my name is Justin Weber.</span> I am a disabled veteran who served in the Army for 4 years, two of which i spent in Iraq during Operation Enduring Freedom.
-    My passion is my family, coding, and playing video games.
-    I started my journey as a web developer a little over 4 years ago. 
-    I started learning how to code on Free Code Camp in my spare time, and quickly fell in love with it. 
-    I decided that it was time to make a career change and that led me to Fullsail University where I got my Bachelor's degree of Science in Web Design and Development.
-</p>
-
-<div class="row">
-    <div class="col-xs-12 col-md-4">
-        <i class="fas fa-chess"></i>
-        <h4>Strategy</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi temporibus perferendis cupiditate aut provident adipisci distinctio minima laboriosam natus quos ab, ipsam illo vel in, commodi, accusamus exercitationem iure nihil.
-        </p>
-    </div>
-    <div class="col-xs-12 col-md-4">
-        <i class="fas fa-desktop"></i>
-        <i class="fas fa-paint-brush"></i>
-        <h4>UX/UI</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat non nam, incidunt, modi odio dolorum repudiandae asperiores recusandae repellat eos error enim laboriosam pariatur exercitationem officia nulla blanditiis earum. Eius.
-        </p>
-    </div>
-    <div class="col-xs-12 col-md-4">
-        <i class="fa fa-angle-left"></i>
-        <i class="fa fa-angle-right"></i>
-        <i class="fa fa-code"></i>
-        <h4>Code</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit optio velit similique aliquid rem quos, libero nobis perspiciatis nam quas fuga, porro, repellendus eligendi dolorem aut deserunt dolorum vero id!
-        </p>
-    </div>
-</div>
-
-<div class="mySkills">
-    <h4>My Skills</h4>
-    <ul class="skillList">
-        <li class="skillItem"><p><i class="fab fa-angular"></i> Angular</p></li>       
-        <li class="skillItem"><p><i class="icon-apache"></i> Apache</p></li>
-        <li class="skillItem"><p><i class="icon-bootstrap"></i> Bootstrap</p></li>
-
-        <li class="skillItem"><p><i class="icon-csharp"></i> C#</p></li>
-        <li class="skillItem"><p><i class="fab fa-css3-alt"></i> CSS</p></li>
-        <li class="skillItem"><p><i class="icon-docker"></i> Docker</p></li>
-        <li class="skillItem"><p><i class="icon-gulp"></i> Gulp</p></li>
-
-        <li class="skillItem"><p><i class="fab fa-html5"></i> HTML</p></li>
-        <li class="skillItem"><p><i class="fa fa-angle-left"></i> Express.Js</p></li>        
-        <li class="skillItem"><p><i class="fab fa-js-square"></i> JavaScript</p></li>
-        <li class="skillItem"><p><i class="icon-jquery"></i> JQuery</p></li>
-        <li class="skillItem"><p><i class="fa fa-angle-left"></i> LAMP Stack</p></li>
-        <li class="skillItem"><p><i class="fa fa-angle-left"></i> MEAN Stack</p></li>
-        <li class="skillItem"><p><i class="icon-mongodb"></i> MongoDb</p></li>
-        <li class="skillItem"><p><i class="icon-mysql"></i> MySQL</p></li>
-        <li class="skillItem"><p><i class="fab fa-node"></i> Node.Js</p></li>
-        <li class="skillItem"><p><i class="icon-npm"></i> Npm</p></li>
-        <li class="skillItem"><p><i class="fab fa-php"></i> PHP</p></li>
-        <li class="skillItem"><p><i class="fab fa-react"></i> React</p></li>
-        <li class="skillItem"><p><i class="fab fa-sass"></i> SASS</p></li>        
-        <li class="skillItem"><p><i class="icon-symfony"></i> Symfony</p></li>
+<div class="aboutMobile">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Story</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">My Skills</a>
+        </li>
     </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tabContainer">
+                <h4 class="header"><i class="far fa-user"></i> Story</h4>
+                <p class="mainText">
+                    <span class="lead">Hello, my name is Justin Weber.</span> I am a disabled veteran who served in the Army for 4 years, two of which i spent in Iraq during Operation Enduring Freedom.
+                    My passion is my family, coding, and playing video games.
+                </p>
+            </div> 
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tabContainer">
+                <h4 class="header"><i class="fas fa-graduation-cap"></i> Education</h4>
+                <img src="/images/fullsailImage.png" alt="Fullsail University Image">                
+                <p class="mainText">
+                    I started my journey as a web developer a little over 4 years ago. 
+                    I started learning how to code on Free Code Camp in my spare time, and quickly fell in love with it. 
+                    I decided that it was time to make a career change and that led me to Fullsail University where I got my Bachelor's degree of Science in Web Design and Development.
+                </p>
+            </div>          
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tabContainer">
+                <h4 class="header"><i class="fas fa-trophy"></i> Skills</h4>
+                <div class="row training">
+                    <div class="skillContainer">
+                        <p class="iconSkills"><i class="fas fa-chess"></i></p>
+                        <h4>Strategy</h4>
+                        <p class="mainText">
+                            I have experience using Agile Methodology. I have practice build projects using the Agile process and workflow. I have worked as both a team member, as well as team manager.   
+                        </p>
+                    </div>
+                    <div class="skillContainer">
+                        <p class="iconSkills"><i class="fas fa-desktop"></i></p>
+                        <p class="iconSkills"><i class="fas fa-paint-brush iconSkills"></i></p>
+                        <h4>UX/UI</h4>
+                        <p class="mainText">
+                            I can build content structure using wireframe interfaces. I have been trained to use most UI patterns and have experience using design software such as Adobe Photoshop, Adobe Illustrator, Adobe InDesign, and many more. I can also perform user testing to make sure your customers have the ultimate user experience.
+                        </p>
+                    </div>
+                    <div class="skillContainer">
+                        <p class="iconSkills"><i class="fa fa-angle-left iconSkills"></i></p>
+                        <p class="iconSkills"><i class="fa fa-angle-right iconSkills"></i></p>
+                        <p class="iconSkills"><i class="fa fa-code iconSkills"></i></p>
+                        <h4>Code</h4>
+                        <p class="mainText">
+                            I am constantly challenging myself to expand my programing knowledge, and keeping up with the most popular programming languages. I have experience in both front and back-end programming. My specialty is full stack web development and I have built project using both the MEAN and LAMP stacks. To view some of my work please feel free to visit my work page. <span class="showList" onclick="showProgrammingListMobile()">Click here to see a list of programming languages I have experience in!</span>
+                        </p>
+                        <div class="mySkills" id="myLanguagesMobile" style="display: none;">
+                            <ul class="skillList">
+                                <li class="skillItem"><p><span><i class="fab fa-angular"></i></span> Angular</p></li>       
+                                <li class="skillItem"><p><span><i class="icon-apache"></i></span> Apache</p></li>
+                                <li class="skillItem"><p><span><i class="icon-bootstrap"></i></span> Bootstrap</p></li>
+
+                                <li class="skillItem"><p><span><i class="icon-csharp"></i></span></p></li>
+                                <li class="skillItem"><p><span><i class="fab fa-css3-alt"></i></span> CSS</li>
+                                <li class="skillItem"><p><span><i class="icon-docker"></i></span> Docker</li>
+                                <li class="skillItem"><p><span><i class="icon-gulp"></i></span> Gulp</li>
+                                <li class="skillItem"><p>Handlebars</p></li>
+
+                                <li class="skillItem"><p><span><i class="fab fa-html5"></i></span>  HTML</p></li>
+                                <li class="skillItem"><p><span><i class="fa fa-angle-left"></i></span>  Express.Js</p></li>        
+                                <li class="skillItem"><p><span><i class="fab fa-js-square"></i></span>  JavaScript</p></li>
+                                <li class="skillItem"><p><span><i class="icon-jquery"></i></span>  JQuery</p></li>
+                                <li class="skillItem"><p>LAMP Stack</p></li>
+                                <li class="skillItem"><p>MEAN Stack</p></li>
+                                <li class="skillItem"><p><span><i class="icon-mongodb"></i></span>  MongoDb</p></li>
+                                <li class="skillItem"><p><span><i class="icon-mysql"></i></span>  MySQL</p></li>
+                                <li class="skillItem"><p><span><i class="fab fa-node"></i></span>  Node.Js</p></li>
+                                <li class="skillItem"><p><span><i class="icon-npm"></i></span>  Npm</p></li>
+                                <li class="skillItem"><p><span><i class="fab fa-php"></i></span>  PHP</p></li>
+                                <li class="skillItem"><p><span><i class="fab fa-react"></i></span>  React</p></li>
+                                <li class="skillItem"><p><span><i class="fab fa-sass"></i></span>  SASS</p></li>        
+                                <li class="skillItem"><p><span><i class="icon-symfony"></i></span>  Symfony</p></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+
 </div>
 
+<div class="aboutWeb">
+    <div class="row">
+        <div class="col-5">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><h5>My Story</h5></a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><h5>My Education</h5></a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><h5>My Skills</h5></a>
+            </div>
+        </div>
+        <div class="col-7">
+            <div class="tab-content" id="nav-tabContent">
+
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                    <div class="tabContainer">
+                        <h4 class="header"><i class="far fa-user"></i> Story</h4>
+                        <p class="mainText">
+                            <span class="lead">Hello, my name is Justin Weber.</span> I am a disabled veteran who served in the Army for 4 years, two of which i spent in Iraq during Operation Enduring Freedom.
+                            My passion is my family, coding, and playing video games.
+                        </p>
+                    </div>          
+                </div>
+
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <div class="tabContainer">
+                        <h4 class="header"><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <img src="/images/fullsailImage.png" alt="Fullsail University Image">
+                        <p class="mainText">
+                            I started my journey as a web developer a little over 4 years ago. 
+                            I started learning how to code on Free Code Camp in my spare time, and quickly fell in love with it. 
+                            I decided that it was time to make a career change and that led me to Fullsail University where I got my Bachelor's degree of Science in Web Design and Development.
+                        </p>
+                    </div>          
+                </div>
+
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <div class="tabContainer">
+                        <h4 class="header"><i class="fas fa-trophy"></i> Skills</h4>
+                        <div class="training">
+                            <div class="skillContainer">
+                                <p class="iconSkills"><i class="fas fa-chess"></i></p>
+                                <h4>Strategy</h4>
+                                <p class="mainText">
+                                    I have experience using Agile Methodology. I have practice build projects using the Agile process and workflow. I have worked as both a team member, as well as team manager.   
+                                </p>
+                            </div>
+                            <div class="skillContainer">
+                                <p class="iconSkills"><i class="fas fa-desktop"></i></p>
+                                <p class="iconSkills"><i class="fas fa-paint-brush iconSkills"></i></p>
+                                <h4>UX/UI</h4>
+                                <p class="mainText">
+                                    I can build content structure using wireframe interfaces for both mobile and web. I have been trained to use most UI patterns and have experience using design software such as Adobe Photoshop, Adobe Illustrator, Adobe InDesign, and many more. I can also perform user testing to make sure your customers have the ultimate user experience.
+                                </p>
+                            </div>
+                            <div class="skillContainer">
+                                <p class="iconSkills"><i class="fa fa-angle-left iconSkills"></i></p>
+                                <p class="iconSkills"><i class="fa fa-angle-right iconSkills"></i></p>
+                                <p class="iconSkills"><i class="fa fa-code iconSkills"></i></p>
+                                <h4>Code</h4>
+                                <p class="mainText"> 
+                                    I am constantly challenging myself to expand my programing knowledge, and keeping up with the most popular programming languages. I have experience in both front and back-end programming. My specialty is full stack web development and I have built project using both the MEAN and LAMP stacks. To view some of my work please feel free to visit my work page. <span class="showList" onclick="showProgrammingListWeb()">Click here to see a list of programming languages I have experience in!</span>
+                                </p>
+
+                                <div class="mySkills" id="myLanguagesWeb" style="display: none;">
+                                    <ul class="skillList">
+                                        <li class="skillItem"><p><span><i class="fab fa-angular"></i></span> Angular</p></li>       
+                                        <li class="skillItem"><p><span><i class="icon-apache"></i></span> Apache</p></li>
+                                        <li class="skillItem"><p><span><i class="icon-bootstrap"></i></span> Bootstrap</p></li>
+
+                                        <li class="skillItem"><p><span><i class="icon-csharp"></i></span></p></li>
+                                        <li class="skillItem"><p><span><i class="fab fa-css3-alt"></i></span> CSS</li>
+                                        <li class="skillItem"><p><span><i class="icon-docker"></i></span> Docker</li>
+                                        <li class="skillItem"><p><span><i class="icon-gulp"></i></span> Gulp</li>
+                                        <li class="skillItem"><p>Handlebars</p></li>
+
+                                        <li class="skillItem"><p><span><i class="fab fa-html5"></i></span>  HTML</p></li>
+                                        <li class="skillItem"><p><span><i class="fa fa-angle-left"></i></span>  Express.Js</p></li>        
+                                        <li class="skillItem"><p><span><i class="fab fa-js-square"></i></span>  JavaScript</p></li>
+                                        <li class="skillItem"><p><span><i class="icon-jquery"></i></span>  JQuery</p></li>
+                                        <li class="skillItem"><p>LAMP Stack</p></li>
+                                        <li class="skillItem"><p>MEAN Stack</p></li>
+                                        <li class="skillItem"><p><span><i class="icon-mongodb"></i></span>  MongoDb</p></li>
+                                        <li class="skillItem"><p><span><i class="icon-mysql"></i></span>  MySQL</p></li>
+                                        <li class="skillItem"><p><span><i class="fab fa-node"></i></span>  Node.Js</p></li>
+                                        <li class="skillItem"><p><span><i class="icon-npm"></i></span>  Npm</p></li>
+                                        <li class="skillItem"><p><span><i class="fab fa-php"></i></span>  PHP</p></li>
+                                        <li class="skillItem"><p><span><i class="fab fa-react"></i></span>  React</p></li>
+                                        <li class="skillItem"><p><span><i class="fab fa-sass"></i></span>  SASS</p></li>        
+                                        <li class="skillItem"><p><span><i class="icon-symfony"></i></span>  Symfony</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--            
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+
+                </div>
+    -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+<div class="section storySection">
+    <h4 class="header">My Story</h4>
+
+    <div class="jumbotron jumbotron-fluid storyJumbotron">
+        <div class="container">
+            <h4>Hello, my name is Justin Weber</h4>
+            <p class="lead">
+                I am a disabled veteran who served in the Army for 4 years, two of which i spent in Iraq during Operation Enduring Freedom.
+                My passion is my family, coding, and playing video games.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="section educationSection">
+    <h4 class="header">My Education</h4>
+    <div class="jumbotron jumbotron-fluid educationJumbotron">
+        <div class="container">
+            <p class="lead">
+                I started my journey as a web developer a little over 4 years ago. 
+                I started learning how to code on Free Code Camp in my spare time, and quickly fell in love with it. 
+                I decided that it was time to make a career change and that led me to Fullsail University where I got my Bachelor's degree of Science in Web Design and Development.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="section skillsSection">
+    <h4 class="header">My Skills</h4>
+    <div class="jumbotron jumbotron-fluid skillsJumbotron">
+        <div class="container">
+            <div class="row training">
+                <div class="col-xs-12 col-md-4">
+                    <p class="iconSkills"><i class="fas fa-chess"></i></p>
+                    <h4>Strategy</h4>
+                    <p>
+                        I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <p class="iconSkills"><i class="fas fa-desktop"></i></p>
+                    <p class="iconSkills"><i class="fas fa-paint-brush iconSkills"></i></p>
+                    <h4>UX/UI</h4>
+                    <p>
+                        I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <p class="iconSkills"><i class="fa fa-angle-left iconSkills"></i></p>
+                    <p class="iconSkills"><i class="fa fa-angle-right iconSkills"></i></p>
+                    <p class="iconSkills"><i class="fa fa-code iconSkills"></i></p>
+                    <h4>Code</h4>
+                    <p>
+                        I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+-->
